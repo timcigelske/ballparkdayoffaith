@@ -10,7 +10,7 @@
   <meta property="og:image" content="assets/og-lambeau.webp" />
   <meta name="theme-color" content="#102a60" />
   <link rel="preload" as="image" href="assets/logo-bdf-circle.webp" />
-  <link rel="preload" as="image" href="assets/lambeau-hero-final.webp" />
+  <link rel="preload" as="image" href="assets/lambeau-leap-hero-desktop.webp" />
   <script src="https://www.paypal.com/sdk/js?client-id=BAA5AHiPXkSJuFBv4Xebn--yzaHJz9dJQN7QuDTFRDMmr40hwwl18NR5p9GC6xLTDiCqjTNgUkvx_jkxEg&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -38,19 +38,18 @@
   </header>
 
   <main id="main">
-    <section id="top" class="hero hero-lambeau" aria-label="Lambeau Leap of Faith">
-      <div class="hero-photo" aria-hidden="true"></div>
-      <div class="hero-sport-band" aria-hidden="true"></div>
-      <div class="container hero-shell">
-        <div class="hero-panel reveal is-visible">
-          <p class="hero-kicker">Presenting Lambeau Leap of Faith</p>
-          <h1>Lambeau Leap of Faith</h1>
-          <div class="football-separator" aria-hidden="true"><span>🏈</span></div>
-          <p class="hero-subtitle">Faith • Football • Fellowship</p>
-          <p class="hero-lede">Mass | Tailgate | Watch Party</p>
+    <section id="top" class="hero hero-banner" aria-label="Lambeau Leap of Faith">
+      <div class="container hero-banner-wrap">
+        <h1 class="sr-only">Lambeau Leap of Faith</h1>
+        <picture class="hero-banner-media reveal is-visible">
+          <source media="(max-width: 700px)" srcset="assets/lambeau-leap-hero-mobile.webp" />
+          <img src="assets/lambeau-leap-hero-desktop.webp" alt="Day of Faith presents Lambeau Leap of Faith, a faith, football and fellowship gathering across from Lambeau Field." />
+        </picture>
+        <div class="hero-summary reveal is-visible">
+          <p class="hero-summary-text">Join Day of Faith across from Lambeau Field for Mass, tailgate food, fellowship and a possible watch party around Wisconsin vs. Notre Dame.</p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-gold" href="#tickets">Reserve tailgate spot</a>
-            <a class="button button-ghost" href="#watch-party">Watch party interest</a>
+            <a class="button button-ghost-dark" href="#watch-party">Watch party interest</a>
           </div>
           <div class="hero-details" aria-label="Event highlights">
             <div>

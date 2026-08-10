@@ -410,3 +410,245 @@ textarea { resize: vertical; }
 @media (max-width: 560px) {
   .hero-lambeau h1 { font-size: clamp(2.65rem, 11.5vw, 4.1rem); }
 }
+
+/* Hero alignment + final stadium crop correction — Aug. 10 */
+@media (min-width: 1081px) {
+  .hero-lambeau {
+    min-height: 720px;
+  }
+  .hero-lambeau .hero-shell {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-left: clamp(44px, 4.8vw, 72px);
+    padding-right: 24px;
+  }
+  .hero-lambeau .hero-panel {
+    width: min(610px, calc(100vw - clamp(44px, 4.8vw, 72px) - 28px));
+    max-width: none;
+  }
+  .hero-lambeau h1 {
+    font-size: clamp(3.25rem, 6.05vw, 5.45rem);
+    letter-spacing: -0.045em;
+    max-width: 100%;
+  }
+  .hero-lambeau .hero-photo {
+    inset: 0 0 0 43%;
+    background-image: linear-gradient(90deg, rgba(7,26,58,.12), rgba(7,26,58,0)), url('assets/lambeau-hero-final.webp');
+    background-size: cover;
+    background-position: center center;
+    clip-path: ellipse(79% 93% at 65% 50%);
+  }
+  .hero-lambeau .hero-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .75rem;
+  }
+  .hero-lambeau .hero-details div {
+    padding: .95rem;
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .hero-lambeau .hero-shell {
+    padding-left: clamp(36px, 4vw, 56px);
+  }
+  .hero-lambeau .hero-panel {
+    width: min(560px, calc(100vw - clamp(36px, 4vw, 56px) - 24px));
+  }
+  .hero-lambeau h1 {
+    font-size: clamp(3rem, 5.45vw, 4.85rem);
+  }
+  .hero-lambeau .hero-photo {
+    inset: 0 0 0 44%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-lambeau .hero-shell {
+    width: min(1160px, calc(100% - 40px));
+    margin-inline: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-lambeau h1 {
+    letter-spacing: -0.045em;
+  }
+}
+
+
+/* Final refinement — selected stadium hero crop + contained title lines */
+.hero-lambeau .hero-panel {
+  overflow: visible;
+}
+.hero-lambeau h1 {
+  display: block;
+  max-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.hero-lambeau h1 .hero-title-line {
+  display: block;
+  white-space: nowrap;
+}
+.hero-lambeau h1 .hero-title-line-second {
+  font-size: .90em;
+}
+@media (min-width: 1081px) {
+  .hero-lambeau .hero-shell {
+    padding-left: clamp(52px, 4.8vw, 78px);
+  }
+  .hero-lambeau .hero-panel {
+    width: min(545px, calc(100vw - clamp(52px, 4.8vw, 78px) - 24px));
+  }
+  .hero-lambeau h1 {
+    font-size: clamp(3.25rem, 5.2vw, 5.05rem);
+    line-height: .93;
+    letter-spacing: -0.035em;
+  }
+  .hero-lambeau .hero-photo {
+    inset: 0 0 0 44%;
+    background-image: linear-gradient(90deg, rgba(7,26,58,.10), rgba(7,26,58,0)), url('assets/lambeau-hero-selected-crop.webp');
+    background-size: cover;
+    background-position: center center;
+    clip-path: ellipse(78% 94% at 65% 50%);
+  }
+  .football-separator {
+    width: min(460px, 100%);
+  }
+}
+@media (min-width: 1440px) {
+  .hero-lambeau .hero-panel {
+    width: min(575px, calc(100vw - clamp(52px, 4.8vw, 78px) - 24px));
+  }
+  .hero-lambeau h1 {
+    font-size: clamp(3.4rem, 5.15vw, 5.28rem);
+  }
+  .hero-lambeau .hero-photo {
+    inset: 0 0 0 43.5%;
+    background-position: center center;
+  }
+}
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .hero-lambeau .hero-shell {
+    padding-left: clamp(42px, 4vw, 58px);
+  }
+  .hero-lambeau .hero-panel {
+    width: min(515px, calc(100vw - clamp(42px, 4vw, 58px) - 24px));
+  }
+  .hero-lambeau h1 {
+    font-size: clamp(3rem, 4.8vw, 4.65rem);
+  }
+  .hero-lambeau .hero-photo {
+    inset: 0 0 0 45%;
+    background-position: center center;
+  }
+  .football-separator {
+    width: min(400px, 100%);
+  }
+}
+@media (max-width: 1080px) {
+  .hero-lambeau .hero-photo {
+    background-image: linear-gradient(90deg, rgba(7,26,58,.55), rgba(7,26,58,.12)), url('assets/lambeau-hero-selected-crop.webp');
+    background-position: center center;
+  }
+  .hero-lambeau h1 .hero-title-line-second {
+    font-size: .94em;
+  }
+}
+@media (max-width: 560px) {
+  .hero-lambeau h1 .hero-title-line {
+    white-space: normal;
+  }
+  .hero-lambeau h1 .hero-title-line-second {
+    font-size: .96em;
+  }
+}
+
+/* Updated responsive banner hero */
+.hero-banner {
+  min-height: auto;
+  background: linear-gradient(180deg, rgba(7,26,58,.03), rgba(7,26,58,.08));
+  padding: 1.25rem 0 0;
+  overflow: visible;
+}
+.hero-banner-wrap {
+  display: grid;
+  gap: 1.35rem;
+}
+.hero-banner-media {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+.hero-banner-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  border: 1px solid rgba(16,42,96,.1);
+  box-shadow: 0 18px 40px rgba(6,21,45,.12);
+}
+.hero-summary {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.hero-summary-text {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+.hero-banner .hero-actions {
+  margin: 0;
+}
+.hero-banner .hero-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+}
+.hero-banner .hero-details div {
+  min-height: 108px;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.96);
+  color: var(--navy);
+  border: 1px solid rgba(16,42,96,.08);
+  box-shadow: 0 10px 28px rgba(6,21,45,.08);
+}
+.hero-banner .hero-details div:nth-child(1) .detail-label { color: var(--red); }
+.hero-banner .hero-details div:nth-child(2) .detail-label { color: var(--gold-2); }
+.hero-banner .hero-details div:nth-child(3) .detail-label { color: var(--navy); }
+
+@media (max-width: 900px) {
+  .hero-banner {
+    padding-top: .75rem;
+  }
+  .hero-banner-media img {
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-banner-wrap {
+    gap: 1rem;
+  }
+  .hero-banner-media img {
+    border-radius: 20px;
+  }
+  .hero-summary-text {
+    font-size: 1rem;
+  }
+  .hero-banner .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-banner .hero-details {
+    grid-template-columns: 1fr;
+  }
+  .hero-banner .hero-details div {
+    min-height: auto;
+  }
+}
