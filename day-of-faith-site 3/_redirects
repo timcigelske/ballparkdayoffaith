@@ -1,5 +1,0 @@
-# Keep old page URLs working if this one-page site replaces the current site.
-/about        /#story        301
-/experience   /#experience   301
-/donate       /#donate       301
-/volunteer    /#volunteer    301
