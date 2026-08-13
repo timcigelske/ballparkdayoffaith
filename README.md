@@ -20,9 +20,9 @@ This is a Netlify-ready static site package for Day of Faith / Lambeau Leap of F
 
 ## Files to edit most often
 
-- `index.html` — content, links, PayPal button, forms, sponsors.
+- `index.html` — content, links, PayPal button and forms.
 - `styles.css` — design system, colors, layout.
-- `assets/` — optimized photos, logo assets and sponsor graphics.
+- `assets/` — optimized photos and logo assets.
 
 ## PayPal hosted button
 
