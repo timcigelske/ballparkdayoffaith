@@ -11,12 +11,16 @@ This is a Netlify-ready static site package for Day of Faith / Lambeau Leap of F
 - A watch-party interest form is included for those without game tickets, with an attendance-count field.
 - Netlify Forms are used for watch-party interest and ambassador/group contacts.
 
-## Deploy to Netlify
+## Publishing workflow
 
-1. Unzip the folder.
-2. In Netlify, choose **Add new site** > **Deploy manually**.
-3. Drag the entire unzipped folder into Netlify.
-4. Netlify will serve `index.html` and collect the included forms automatically.
+The GitHub repository is connected to the Netlify project `ballparkdayoffaith` using continuous deployment.
+
+1. Make website edits through ChatGPT/Codex.
+2. Commit the updated files to the GitHub `main` branch.
+3. Netlify automatically builds and publishes the new commit.
+4. Verify the production site at [ballparkdayoffaith.netlify.app](https://ballparkdayoffaith.netlify.app).
+
+Keep GitHub connected to Netlify so changes retain version history and deploy automatically.
 
 ## Files to edit most often
 
@@ -31,4 +35,4 @@ The embedded button currently uses hosted button ID `M99WVWGQ2EU5L` and the PayP
 
 Update note: The hero/header now uses the selected stadium-only Lambeau Field photo option.
 
-<!-- ChatGPT GitHub content-write access confirmed on 2026-08-13. -->
+<!-- ChatGPT GitHub content-write access and Netlify continuous deployment verified on 2026-08-13. -->
