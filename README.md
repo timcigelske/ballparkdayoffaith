@@ -30,3 +30,5 @@ The embedded button currently uses hosted button ID `M99WVWGQ2EU5L` and the PayP
 
 
 Update note: The hero/header now uses the selected stadium-only Lambeau Field photo option.
+
+<!-- ChatGPT GitHub content-write access confirmed on 2026-08-13. -->
