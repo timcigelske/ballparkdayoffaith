@@ -1,9 +1,10 @@
-# Redirect the default Netlify subdomain to the primary custom domain.
-http://ballparkdayoffaith.netlify.app/* https://ballparkdayoffaith.com/:splat 301!
-https://ballparkdayoffaith.netlify.app/* https://ballparkdayoffaith.com/:splat 301!
-
-# Keep old page URLs working if this one-page site replaces the current site.
-/about /#story 301
-/experience /#experience 301
-/donate /#donate 301
-/volunteer /#volunteer 301
+/thank-you.html /thank-you/ 301
+/about /about/ 301
+/experience /experience/ 301
+/donate /donate/ 301
+/volunteer /volunteer/ 301
+/stories /stories/ 301
+/news /news/ 301
+/sponsor /sponsor/ 301
+/postgame-resources /postgame-resources/ 301
+/blog /blog/ 301
